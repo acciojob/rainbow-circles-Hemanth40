@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <style>
+    #outer {
+      width: 300px;
+      height: 300px;
+      background: #ff0000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    #middle {
+      width: 250px;
+      height: 250px;
+      background: #ffa500;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow:
+        inset 0 0 0 25px #ffff00,
+        inset 0 0 0 50px #008000,
+        inset 0 0 0 75px #0000ff,
+        inset 0 0 0 100px #800080;
+    }
+
+    #inner {
+      width: 50px;
+      height: 50px;
+      background: #800080;
+      border-radius: 50%;
+    }
+  </style>
+</head>
 <body>
-    <!-- the entire body must be written by student -->
-    <div id="outer">
-        <div id="middle">
-            <div id="inner"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div id="outer">
+  <div id="middle">
+    <div id="inner"></div>
+  </div>
+</div>
 
 </body>
-
 </html>
